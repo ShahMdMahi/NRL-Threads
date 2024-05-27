@@ -1,0 +1,37 @@
+.icon-container-dark {
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+.icon-container-light {
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.icon-container-dark:hover {
+  background-color: #1e1e1e;
+}
+.icon-container-light:hover {
+  background-color: #616161;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
