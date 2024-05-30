@@ -219,7 +219,10 @@ const updateUser = async (req, res) => {
             if (user.profilePic) {
                 await cloudinary.uploader.destroy(user.profilePic.split("/").pop().split(".")[0]);
             }
-            const uploadedResponse = await cloudinary.uploader.upload(profilePic);
+            const uploadedResponse = await cloudinary.uploader.upload(profilePic, {
+                resource_type: "image",
+                timestamp: Date.now(),
+            });
             user.profilePic = uploadedResponse.secure_url;
         }
 
